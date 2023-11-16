@@ -9,4 +9,5 @@ $kutno = mysqli_connect($serwer, $konto, $haslo, $baza);
 if (!$kutno){
     die("Połączenie nieudane" . mysqli_connect_error());
 }
+mysqli_connect
 ?>

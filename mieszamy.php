@@ -25,8 +25,11 @@ if ($result->num_rows > 0){
   echo "<table>";
   while ($row = $result->fetch_assoc()) {
     echo "<tr>";
-    echo "nr farby: " . $row["id_farby"]; 
-    echo "kolor: " . $row["kolor"]; 
+    echo "<td>" . "nr farby: " . $row["id_farby"] . "</td>";
+    echo "<td>" . "kolor: " . $row["kolor"] . "</td>";
+    echo "<td>" . "cena farby: " . $row["cena"] . "</td>";
+    echo "<td>" . "pojemność: " . $row["pojemnosc"] . "</td>";
+   echo "</tr>";
   }
   echo "</table>";
 } else {
